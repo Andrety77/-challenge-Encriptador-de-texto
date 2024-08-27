@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Julian Prado</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+    <!--encabezado-->
+    <header>
+        <a href="#" rel="">
+       <img class="logo_alura" src="imagenes/Logo.png" alt="logo Alura">
+        </a>
+    </header>
+    <!--cuerpo-->
+    <main>
+    <section class="encriptador">
+        <textarea class="encriptar" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="encriptador_aviso">
+            <img src="imagenes/oracle.png" alt="imagen de exclamacion" class="exclamacion">
+            <p class="texto_exclamacion">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="encriptador_contenedor">
+            <button type="submit" class="boton_encriptar">Encriptar</button>
+            <button type="submit" class="boton_desencriptar">Desencriptar</button>
+        </div>
+    </section>
+
+    <section class="respuesta">
+        <div class="respuesta_contenedor">
+            <img src="imagenes/Muñeco.png" alt="imagen muñeco" class="imagen_muñeco">
+            <p class="texto_uno">◉Ningun Mensaje Fue Encontrado</p>
+            <p class="texto_dos">◉Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <textarea type="mensaje" class="evaluar" readonly></textarea>
+        <button type="submit" class="boton_copiar">Copiar</button>
+    
+    </section>
+    </main>
+<footer class="final">Desarollado por Julian Prado Peña</footer> 
+
+
+    <script src="funciones.js"></script>
+   
+</body>
+</html>

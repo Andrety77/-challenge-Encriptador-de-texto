@@ -1,0 +1,399 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --colorfondo: #537bc6;
+    --colorborde:#7ebfea;
+    --azulOscuro:#004977;
+    --gris:#88ACC5;
+    --blanco: #ffffff;
+    --RGBA:rgba(0,0,0,0.08);
+    --withe-blue:#D8DFE8;
+    --azul-medio:#0a38718a;
+    --gray:#343A40;
+    --colorrespuesta:white;
+    --gris-claro:#495057;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+    font-family: 'iner', sans-serif;
+    text-decoration: none;
+    
+    
+}
+
+::selection{
+    background: var(--azulOscuro);
+    color: var(--blanco);
+}
+
+body{
+    height: 100%;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+/* encabezado  */
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+header .logo_alura{
+    display: flex;
+    align-items: flex-start;
+    width: 130px;
+    height:55;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+
+/* Cuerpo */
+
+main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.encriptador{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+
+}
+
+.encriptar{
+    width: 660px;
+    height: 280px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border-radius: 16px;
+    resize: none;
+}
+
+.encriptar::placeholder{
+    color:var(--colorfondo);
+}
+
+.encriptador_aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    margin-top:-27px;
+    top: 500px;
+
+}
+
+.texto_exclamacion{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color:var(--colorfondo);
+}
+
+.encriptador_contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.boton_encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(
+        150deg,
+        #251c1c,
+        #3a0c37,
+        #6e2475
+    );
+    border: 1px solid var(--azulOscuro);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px 5px var(--RGBA);
+    transition: .2s;
+}
+
+.boton_encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--colorfondo),
+    inset -3px -4px 8px var(--azulOscuro);
+    color: var(--withe-blue);
+
+}
+
+.boton_desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(
+        150deg,
+        #251c1c,
+        #3a0c37,
+        #6e2475
+    );
+    border: 1px solid var(--azulOscuro);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px 5px var(--RGBA);
+}
+
+.boton_copiar:active,
+.boton_desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--azulOscuro),
+    inset -3px -4px 8px var(--colorfondo);
+    color: var(--azul-medio);
+
+}
+
+.respuesta{
+    width: 315px;
+    height: 580px;
+    background: var(--colorrespuesta);
+    box-shadow: 10px 24px 32px -8px var(--gray);
+    position: relative;
+    margin-top: 12px;
+    margin-left: -70px;
+    border-radius: 32px;
+    text-align: center;
+    
+
+}
+
+.respuesta_contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--colorrespuesta);
+}
+
+.imagen_muñeco{
+    width: 350px;
+    margin-top: 100px;
+    background: var(--colorrespuesta);
+    border-radius: 32px;
+
+}
+
+.texto_uno{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-align:start;
+    margin-top: -450PX;
+    color: var(--colorfondo);
+    background: var(--colorrespuesta);
+}
+
+.texto_dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top:20PX;
+    line-height: 17px;
+    text-align:start;
+    color: var(--colorfondo);
+    background: var(--colorrespuesta);
+}
+
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--gris-claro);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none; 
+}
+
+.evaluar:focus{
+    outline: none;
+}
+
+.boton_copiar{
+    width: 315px;
+    height: 67px;
+    margin-left: 90px;
+    position: absolute;
+    margin: 0px;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(
+        150deg,
+        #251c1c,
+        #3a0c37,
+        #6e2475
+    );
+    border: 1px solid var(--azulOscuro);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton_encriptar:hover,
+.boton_desencriptar:hover,
+.boton_copiar:hover{
+    transform: scale(0.98);
+}
+
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador_contenedor{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encriptador_aviso{
+        position: inherit;
+        margin: 15px;
+    }   
+    
+    .respuesta{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .respuesta_contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .imagen_muñeco{
+        display:flex;
+        width: 35%;
+        height: 35%;
+        margin: 0 0 0 150px;
+    }
+
+    .boton_copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+
+@media(max-width: 720px){
+    
+    header .logo_alura{
+        width: 100%;
+        background: var(--White);
+        padding: 2px;
+    }
+
+    .imagen_muñeco{
+        display:flex;
+        width: 35%;
+        height: 35%;
+        margin: 0 0 0 90px;
+    }
+
+    .encriptar{
+        width:  90%;
+        font-size: 24px;
+    }
+
+    .encriptador_contenedor{
+        display: grid;
+        gap: 21px;
+    }
+
+    .respuesta{
+        width: 90%;
+    }
+
+} 
+
+.final{
+    font-size: 20px;
+   color: white;
+    background-image: linear-gradient(
+        1800deg,
+        #430d47,
+        #430e3f,
+        #54185a
+    ); font-size: larger;
+    border: #3a0c37;
+    border-radius: 5%;
+    align-self: center;
+    
+
+
+
+
+}
